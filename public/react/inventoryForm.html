@@ -35,9 +35,29 @@
     
         
           
-            <button type="submit">Add Item</button>
+          <button id="addItemButton" type="submit">Add Item</button>
+
           </form>
           
         </form>
+        <script src="server\seedData.js">
+          const addItemButton = document.getElementById("addItemButton");
+          const form = document.querySelector("form");
+        
+          addItemButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const newItem = {
+              title: formData.get("name"),
+              price: parseFloat(formData.get("price")),
+              description: formData.get("description"),
+              category: formData.get("category"),
+              image: formData.get("image"),
+            };
+            module.exports.items.push(newItem);
+            console.log("Item added successfully!", newItem);
+          });
+        </script>
+        
     </body>
 </html>
