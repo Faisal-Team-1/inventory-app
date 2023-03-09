@@ -1,11 +1,4 @@
-function submitData() {
-   var data = document.getElementById("inputData").value; // Get the user's input data
-   localStorage.setItem("userData", data); // Store the data in localStorage using a key of "userData"
-   alert("Data submitted successfully!"); // Show a confirmation message to the user
- }
-
 module.exports = {
-   
   sauces: [
     {"name" : "Sriracha", "image" : "https://64.media.tumblr.com/12cd128183713bf928bda87a24f22487/tumblr_ne6jee85PM1tha1vgo1_250.gif"},
     {"name" : "Franks", "image": "https://cdn.streamelements.com/uploads/1887a0da-3642-4795-b5f5-774d5b377e52.gif"},
