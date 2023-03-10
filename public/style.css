@@ -1,9 +1,91 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
+/* Define global styles */
+body {
+  font-family: Arial, sans-serif; /* set the font family for the entire page */
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
 }
 
-img {
-  width: 20vw;
+/* Define styles for table headers */
+table th {
+  background-color: #333; /* set the background color */
+  color: #fff; /* set the text color */
+  padding: 10px; /* add some padding */
+}
+
+/* Define styles for table cells */
+table td {
+  border: 1px solid #ccc; /* add a border with a light gray color */
+  padding: 10px; /* add some padding */
+}
+
+/* Define styles for item images */
+table img {
+  max-width: 100%; /* make sure images don't overflow their container */
+  height: auto; /* preserve aspect ratio when resizing */
+}
+
+/* Define styles for the "root" div */
+#root {
+  margin-top: 20px; /* add some space between the element and the top of the page */
+  display: flex; /* use flexbox for layout */
+  justify-content: center; /* center the element horizontally */
+}
+
+/* Define styles for the inventory list */
+.inventory-list {
+  display: flex; /* use flexbox for layout */
+  flex-wrap: wrap; /* wrap items onto multiple lines if necessary */
+  justify-content: center; /* center the items horizontally */
+}
+
+/* Define styles for item cards */
+.item-card {
+  background-color: #f9f9f9; /* set the background color */
+  border: 1px solid #ccc; /* add a border with a light gray color */
+  border-radius: 5px; /* round the corners */
+  margin: 10px; /* add some margin around the element */
+  padding: 10px; /* add some padding */
+  width: 300px; /* set the width of the element */
+  display: inline-block; /* make sure the element stays on the same line as other inline-block elements */
+}
+
+.item-card h2 {
+  margin-top: 0; /* remove default margin on top */
+}
+
+.item-card p {
+  margin-top: 0; /* remove default margin on top */
+}
+
+.item-card img {
+  max-width: 100%; /* make sure images don't overflow their container */
+  height: auto; /* preserve aspect ratio when resizing */
+  display: block; /* remove extra space below the image */
+  margin-bottom: 10px; /* add some margin below the image */
+}
+
+/* Define styles for forms */
+form label {
+  display: block; /* make the label a block element so it takes up the full width */
+  margin-bottom: 5px; /* add some margin below the label */
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%; /* make the input fields take up the full width */
+  padding: 10px; /* add some padding */
+  margin-bottom: 10px; /* add some margin below the input fields */
+  border: 1px solid #ccc; /* add a border with a light gray color */
+  border-radius: 5px; /* round the corners */
+  box-sizing: border-box; /* include padding and border in the width of the element */
+}
+
+form button {
+  background-color: #333; /* set the background color */
+  color: #fff; /* set the text color */
+  border: none; /* remove the border */
+  border-radius: 5px; /* round the corners */
+  padding: 10px; /* add some padding */
+  cursor: pointer; /* change the cursor on hover */
 }

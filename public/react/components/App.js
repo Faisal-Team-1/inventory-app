@@ -59,7 +59,7 @@ export const App = () => {
         <>
           {/* Render the SaucesList component */}
           <h1>Sauce Store</h1>
-          <h2>All things 🔥</h2>
+          <h2>All Sauces</h2>
           <SaucesList sauces={sauces} setCurrent={setCurrent} />
 
           {/* Render the ItemsList component */}

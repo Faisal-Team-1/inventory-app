@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 const { Sauce } = require("../models");
 
-// GET /sauce
-router.get("/", async (req, res, next) => {
+// GET /sauces
+router.get("/", async (req, res, next) => { // set up a route to handle GET requests to the /sauces route
   try {
-    const sauces = await Sauce.findAll();
-    res.send(sauces);
+    const sauces = await Sauce.findAll(); // find all sauces in the database
+    res.send(sauces); // send the sauces as a response
   } catch (error) {
-    next(error);
+    next(error); // pass the error to the error handler middleware
   }
 });
 
