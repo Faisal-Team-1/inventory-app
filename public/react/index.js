@@ -4,7 +4,8 @@ import 'regenerator-runtime/runtime'
 
 import {App} from './components/App';
 
+// Render the App component inside the 'root' element of the HTML document
 ReactDOM.render(
-	<App />,
-	document.getElementById('root')
-)
+  <App />,
+  document.getElementById('root')
+);

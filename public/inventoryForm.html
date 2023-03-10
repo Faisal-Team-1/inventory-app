@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inventory Form</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="./react/index.js"></script>
+        <h1>Inventory Form</h1>
+        <form action="add-to-inventory.php" method="post" enctype="multipart/form-data">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name"><br>
+
+          <label for="category">Category:</label>
+          <select name="category" id="category">
+            <option value="Men's clothing">Men's clothing</option>
+            <option value="Jewellery">Jewellery</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Women's clothing">Women's clothing</option>
+          </select><br>
+
+          <label for="description">Description:</label>
+          <textarea name="description" id="description"></textarea><br>
+
+          <label for="price">Price:</label>
+          <input type="number" name="price" id="price"><br>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" name="quantity" id="quantity"><br>
+
+          <label for="image">Image:</label>
+          <input type="file" name="image" id="image"><br>
+
+          <input type="submit" value="Add to Inventory">
+        </form>
+    </body>
+</html>
